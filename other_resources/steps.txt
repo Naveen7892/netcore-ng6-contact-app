@@ -26,7 +26,26 @@ Add extensions for the following:
 >> dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet
 (In contact-app.csproj, rename PackageReference element tag to DotNetCliToolReference for this package and put the line in Second ItemGroup)
 
+>> mkdir Models
+
+- create Contact.cs and ContactAppContext.cs in Models folder and copy contents from tutorial
+
 >> dotnet ef migrations add InitialCreate
 (Creates Migrations folder with three files)
 
+(as admin)
 >> dotnet ef database update
+
+[
+    To revert any migration, use
+    >> dotnet ef database update OtherMigration
+]
+
+- Create ContactController.cs in Controllers folder and copy contents from tutorial
+
+>> dotnet build
+
+(as admin)
+>> dotnet run
+
+------------------------------------------------------------------------------------------------------

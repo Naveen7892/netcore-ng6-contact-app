@@ -31,5 +31,10 @@ namespace contact_app.Models
             get;
             set;
         }
+        
+        // public string message2 {
+        //     get;
+        //     set;
+        // }
     }
 }
